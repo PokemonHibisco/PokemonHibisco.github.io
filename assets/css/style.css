@@ -49,11 +49,13 @@ h1::before,h1::after,h2::before,h2::after,h3::before,h3::after,h4::before,h4::af
 }
 
 h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {
+	background-image: linear-gradient(to right, #af4261, #f3ec78);
 	right: 0.5em;
 	margin-left: -50%;
 }
   
 h1::after,h2::after,h3::after,h4::after,h5::after,h6::after{
+	background-image: linear-gradient(to left, #af4261, #f3ec78);
 	left: 0.5em;
 	margin-right: -50%;
 }
@@ -142,6 +144,8 @@ footer{
 @media only screen and (max-width: 480px){ /* Not mobile first (bad) (cringe) */
 	body{
 		font-size: 14px;
+		box-shadow: none;
+		border-right: 2px solid var(--text);
 	}
 }
 
