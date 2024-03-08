@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} 🌺 Pokémon Hibisco</title>
+    <link rel="icon" href="/assets/img/favicon.ico" />
+    <meta name="description" content="{{ page.description }}"/>
+    <!-- Embed shit here -->
+	<meta property="og:site_name" content="Pokémon Hibisco"/>
+	<meta property="og:title" content="{{ page.title }}"/>
+	<meta property="og:description" content="{{ page.description }}">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+	<body>
+        <header>
+            <p style="text-align: center; font-size: 3em; margin: 1rem; font-weight: bolder;">🌺 <span class="title">Pokémon Hibisco</span> 🌺</p>
+        </header>
+        <hr>
+        <nav>
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link }}">{{ item.name }}</a>
+            {% endfor%}
+        </nav>
+        <hr>
+		<main>
+            {{ content }}
+        </main>
+        <footer>
+            <hr>
+            <p>Footer</p>
+        </footer>
+	</body>
+</html>
