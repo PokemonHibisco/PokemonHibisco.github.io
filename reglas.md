@@ -42,7 +42,7 @@ permalink: /reglas/
 ## Actas
 
 - **Está prohibido el uso de bases, picrews, tracing, y contenido generado por inteligencia artificial.**
-    - Las actas deben estar hechas por ti o comisionadas/regaladas expresamente para ti. El uso de dibujos ajenos de otra forma está terminantemente prohibido.
+    - Las actas deben estar hechas por ti o comisionadas/regaladas expresamente para ti. El uso de dibujos o escritos ajenos de otra forma está terminantemente prohibido.
 
 ## Y recuerda
 

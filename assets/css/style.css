@@ -4,7 +4,7 @@
 	--bg: #280d1ce0;
     --text: #dadada;
 	--link: #4b9ce7;
-	--link-visited: #ba74ff;
+	--link-hover: #a5cdf3;
 }
 
 html{
@@ -64,10 +64,12 @@ h1::after,h2::after,h3::after,h4::after,h5::after,h6::after{
 
 a{
 	color: var(--link);
+	transition: .3s;
 }
 
 a:hover{
 	text-decoration: none;
+	color: var(--link-hover);
 }
 
 img{
@@ -139,13 +141,18 @@ footer{
     -webkit-user-select: all;
 }
 
+blockquote{
+	border-left: 2px solid var(--text);
+	margin-left: 0;
+	padding-left: 1em;
+}
+
 /* Media queries */
 
 @media only screen and (max-width: 480px){ /* Not mobile first (bad) (cringe) */
 	body{
 		font-size: 14px;
 		box-shadow: none;
-		border-right: 2px solid var(--text);
 	}
 }
 
@@ -163,6 +170,14 @@ a.discord:hover{
 	background-color: #719eff;
 }
 
+.spoiler, .spoiler a{ 
+	color: #1a1a1a; 
+	background-color: #1a1a1a;
+}
+  
+.spoiler:hover, .spoiler:hover a {
+	color: var(--text);
+}
 
 
 
