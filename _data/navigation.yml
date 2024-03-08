@@ -1,0 +1,6 @@
+- name: Inicio
+  link: /
+- name: Reglas
+  link: /reglas/
+- name: Guías
+  link: /guias/
