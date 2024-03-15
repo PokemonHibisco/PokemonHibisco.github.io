@@ -5,6 +5,9 @@
     --text: #dadada;
 	--link: #4b9ce7;
 	--link-hover: #a5cdf3;
+
+	--gradient1: #f9da61;
+	--gradient2: #b9375c;
 }
 
 html{
@@ -30,7 +33,7 @@ body {
 /* Header style */
 
 .title,h1,h2,h3,h4,h5,h6{
-	background-image: linear-gradient(45deg, #f3ec78, #af4261);
+	background-image: linear-gradient(45deg, var(--gradient1), var(--gradient2));
 	text-align: center;
 	color: transparent;
 	background-clip: text;
@@ -39,7 +42,7 @@ body {
 }
 
 h1::before,h1::after,h2::before,h2::after,h3::before,h3::after,h4::before,h4::after,h5::before,h5::after,h6::before,h6::after{
-	background-image: radial-gradient(#af4261, #f3ec78);
+	background-image: radial-gradient(var(--gradient2), var(--gradient1));
 	content: "";
 	display: inline-block;
 	height: 2px;
@@ -49,13 +52,13 @@ h1::before,h1::after,h2::before,h2::after,h3::before,h3::after,h4::before,h4::af
 }
 
 h1::before,h2::before,h3::before,h4::before,h5::before,h6::before {
-	background-image: linear-gradient(to right, #af4261, #f3ec78);
+	background-image: linear-gradient(to right, var(--gradient2), var(--gradient1));
 	right: 0.5em;
 	margin-left: -50%;
 }
   
 h1::after,h2::after,h3::after,h4::after,h5::after,h6::after{
-	background-image: linear-gradient(to left, #af4261, #f3ec78);
+	background-image: linear-gradient(to left, var(--gradient2), var(--gradient1));
 	left: 0.5em;
 	margin-right: -50%;
 }
